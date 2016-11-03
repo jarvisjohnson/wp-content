@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote {
+  quotes: "\201c" "";
+
+  &:before {
+    content: open-quote;
+  }
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+  padding: 4px 45px 10px 84px;
+  line-height: 1.8;
+  h4 {
+    max-width: 500px;
+    .page .entry-content & {
+      margin-top: 0;
+    }
+  }
+  h6 {
+    .page .entry-content & {
+      margin-top: 15px;
+    }
+    .single & {
+      margin-top: 17px;
+    }
+  }
+  q {
+    &:before, &:after {
+      display: none;
+    }
+  }
+  cite {
+    display: block;
+    font-style: normal;
+    margin-top: 20px;
+    span {
+      font-weight: 400;
+      margin-right: 3px;
+    }
+  }
+  &:before {
+    content: '\f10e';
+    @include font-awesome-icon;
+    position: absolute;
+    font-size: 54px;
+    left: 0;
+    top: 15px;
+    transform: rotate(180deg);
+
+  }
+}
+.entry-content blockquote {
+  @include font-size(1);
+  cite {
+    @include font-size(.875);
+  }
+}
+
+* + blockquote {
+  margin-top: -10px;
+}
+
+.single blockquote + h6,
+blockquote + * {
+  margin-top: 0;
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin: 20px -10px 25px;
+  @include media-breakpoint-up(lg) {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+
+code {
+  padding: 2px 5px;
+}
+
+@import "lists";
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";

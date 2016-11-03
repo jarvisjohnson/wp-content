@@ -1,0 +1,83 @@
+#tm_builder_outer_content {
+
+  .tm_pb_column_4_4 {
+    .tm_pb_module.tm_pb_countdown_timer {
+      padding: 4% 4% 6% 4%;
+    }
+  }
+  .tm_pb_module.tm_pb_countdown_timer {
+    padding: 10px 10px 30px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 25px 0 60px 0;
+    }
+
+    &.tm_pb_countdown_timer_circle_layout.tm_pb_module {
+      body & {
+        padding: 0;
+        .sep {
+          margin: 0 13px;
+        }
+        .values {
+          border-radius: 50% !important;
+          margin: 0;
+          width: 137px;
+        }
+      }
+    }
+
+    .tm_pb_countdown_timer_container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+
+      h4 {
+        margin-top: 0.8em;
+        flex: 1 1 100%;
+        @include media-breakpoint-up(xl) {
+          flex: auto;
+        }
+      }
+
+      .section {
+
+        &.values {
+          flex: 1 1 auto;
+          margin: 5px 10px;
+          width: auto;
+          @include media-breakpoint-up(xl) {
+            flex: auto;
+          }
+
+          @include media-breakpoint-up(lg) {
+            margin: 0;
+          }
+
+          @include media-breakpoint-up(sm) {
+            margin: 5px 15px;
+          }
+        }
+
+        &.sep {
+          display: none;
+          @include media-breakpoint-up(xl) {
+            display: inline-block;
+          }
+        }
+
+        .label {
+          font-size: 14px;
+        }
+
+        .countdown-sep {
+          font-size: 50px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+

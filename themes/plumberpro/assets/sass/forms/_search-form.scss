@@ -1,0 +1,122 @@
+.search-form {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+
+  .header__search & {
+    display: block;
+  }
+
+  .search-form_input_wr, .search-form_btn_wr {
+    .header__search & {
+      flex: auto;
+    }
+  }
+
+  .search-form_input_wr {
+    flex: 1 1 100%;
+  }
+
+  .search-form_btn_wr {
+    flex: 1 0 auto;
+  }
+
+  .footer-area & {
+    @include media-breakpoint-between(md, lg) {
+      text-align: center;
+      .search-form__field {
+        width: 100%;
+      }
+      .search-form__submit {
+        margin-left: 0;
+        float: none;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .sidebar-primary & {
+    @include media-breakpoint-only(md) {
+      .search-form_btn_wr {
+        .search-form__submit {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  .header__search & {
+    &:after {
+      clear: both;
+      content: "";
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__field[type="search"] {
+    border: none;
+    border-radius: $border__radius;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 20px;
+
+    .header__search & {
+      width: 90px;
+      float: left;
+      vertical-align: top;
+      border: 1px solid;
+      border-radius: 3px;
+    }
+  }
+  &__submit {
+    padding: 15px 0;
+    border-radius: $border__radius;
+    vertical-align: top;
+    float: left;
+    width: 75px;
+    margin-left: 15px;
+    @include transition(.3s ease all);
+    i.material-icons {
+      margin: 0 auto;
+      display: block;
+      @include font-size(1.5);
+      line-height: 20px;
+      height: 20px;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.widget-area, .not-found, .tm_pb_widget_area {
+  .search-form {
+    position: relative;
+    .search-form__field[type="search"] {
+      padding: 16px 45px 16px 20px;
+    }
+    .search-form__submit {
+      position: absolute;
+      padding: 15px 0;
+      width: auto;
+      margin-left: 0px;
+      right: 35px;
+      border: none;
+      background: transparent;
+      color: $color__additional;
+      i.material-icons {
+        margin: 0 auto;
+        display: block;
+        @include font-size(1.375);
+      }
+    }
+  }
+  &.error-404 {
+    .search-form__submit {
+      right: 20px;
+    }
+  }
+}

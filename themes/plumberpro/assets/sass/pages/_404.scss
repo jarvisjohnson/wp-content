@@ -1,0 +1,28 @@
+.not-found {
+  padding: 5px 30px 30px 30px;
+  text-align: center;
+  margin: 0 0 10px;
+  .page-content {
+    margin: 3px 0 0;
+  }
+  .page-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 80px;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 43px;
+  }
+  .btn {
+    text-transform: capitalize;
+  }
+  .search-form {
+    width: 100%;
+    margin: 20px auto 0;
+    @include media-breakpoint-up(sm) {
+      max-width: 370px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.swiper-pagination .swiper-pagination-bullet{
+	background-color: $regular_accent_color_1;
+}
+.swiper-button-next, .swiper-button-prev{
+	color: $invert_link_color;
+	background: $regular_accent_color_2;
+}
+
+.swiper-button-next:hover{
+	color: $invert_link_color;
+	background: $regular_accent_color_1;
+	background: -webkit-linear-gradient(to right, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+	background: linear-gradient(to right, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+}
+.swiper-button-prev:hover{
+	color: $invert_link_color;
+	background: $regular_accent_color_1;
+	background: -webkit-linear-gradient(to left, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+	background: linear-gradient(to left, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+}
+
+.swiper-wrapper .post .inner:hover {
+	background: transparent;
+}
+.swiper-wrapper .post .entry-content .btn:hover {
+    color: $regular_accent_color_1;
+}
+.swiper-wrapper .post__cats a {
+    background-color: $regular_accent_color_1;
+}
+.swiper-wrapper .post .entry-content h3 a {
+    color: $regular_link_hover_color;
+}
+.swiper-wrapper .post .entry-content h3 a:hover {
+    color: $regular_accent_color_1;
+}
+.swiper-wrapper .post__cats a:hover {
+	color: #fff;
+	background: $regular_link_hover_color;
+}

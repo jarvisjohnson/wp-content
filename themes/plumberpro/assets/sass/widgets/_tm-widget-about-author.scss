@@ -1,0 +1,101 @@
+.widget-about-author {
+  text-align: center;
+  .sidebar-primary &.widget,
+  .sidebar-secondary &.widget,
+  .before-content-area &.widget,
+  .after-content-area &.widget,
+  .before-loop-area &.widget,
+  .after-loop-area &.widget,
+  .full-width-header-area &.widget{
+    padding: 30px 40px;
+  }
+  .full-width-header-area &,
+  .after-content-full-width-area & {
+    text-align: left;
+    padding: 10px;
+    @include media-breakpoint-up(lg) {
+      padding: 30px;
+    }
+  }
+  .before-content-area &,
+  .before-loop-area &,
+  .after-content-area &,
+  .after-loop-area & {
+    text-align: left;
+  }
+  .position-two-sidebars .before-loop-area &,
+  .position-two-sidebars .after-loop-area & {
+    text-align: center;
+  }
+}
+
+.about-author {
+  text-transform: capitalize;
+  &:after {
+    clear: both;
+    content: "";
+    width: 100%;
+    display: block;
+  }
+  &_avatar {
+    text-align: center;
+    padding: 5px 0 0;
+    img {
+      border-radius: 100%;
+    }
+    .full-width-header-area &,
+    .after-content-full-width-area &,
+    .before-content-area &,
+    .before-loop-area &,
+    .after-content-area &,
+    .after-loop-area & {
+      margin: 0 0 10px;
+      @include media-breakpoint-up(sm) {
+        margin: 0 20px 0 0;
+        float: left;
+      }
+    }
+    .position-two-sidebars .before-loop-area &,
+    .position-two-sidebars .after-loop-area & {
+      float: none;
+      margin: 0;
+    }
+  }
+  &_content {
+    .full-width-header-area &,
+    .after-content-full-width-area &,
+    .before-content-area &,
+    .before-loop-area &,
+    .after-content-area &,
+    .after-loop-area & {
+      overflow: hidden;
+    }
+    .position-two-sidebars .before-loop-area &,
+    .position-two-sidebars .after-loop-area & {
+      overflow: visible;
+    }
+  }
+  &_name {
+    margin: 0;
+    padding: 15px 0;
+  }
+  &_description {
+    padding: 0 0 20px;
+  }
+  &_btn_box {
+    padding: 0 0 5px;
+    .sidebar-primary &,
+    .sidebar-secondary &,
+    .position-two-sidebars .before-loop-area &,
+    .position-two-sidebars .after-loop-area & {
+      padding-left: 10px;
+      padding-right: 10px;
+      @include media-breakpoint-only(md){
+        padding: 0;
+        .btn{
+          padding: 14px 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.tm_pb_builder #tm_builder_outer_content {
+  .tm_audio_content h2,
+  .tm_link_content h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .tm_pb_blog_grid_wrapper {
+    .col-lg-4:last-child {
+      max-width: 100%;
+      flex: 0 0 100%;
+      @include media-breakpoint-up(lg) {
+        max-width: 33.33333%;
+        flex: 0 0 33.33333%;
+      }
+    }
+  }
+
+  .entry-featured-image-url {
+    @extend %make-hover;
+    text-align: center;
+    img {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .tm_pb_post .tm_quote_content {
+    text-align: left;
+    blockquote {
+      h4 q {
+        color: #fff;
+      }
+    }
+    h6 cite {
+      font-weight: 700;
+    }
+  }
+
+  .tm_pb_blog_list_wrapper{
+    .tm_pb_post.post_format-post-format-link{
+      width: 100%;
+    }
+    article{
+      width: 100%;
+    }
+  }
+
+  .tm_pb_post .tm_pb_gallery_post_type .tm_pb_slide {
+    min-height: 350px !important;
+    @include media-breakpoint-up(md) {
+      min-height: 270px !important;
+    }
+  }
+  .tm-pb-slider-arrows {
+    .tm-pb-arrow-prev,
+    .tm-pb-arrow-next {
+      &:before {
+        font-size: 24px;
+      }
+    }
+  }
+  .tm_pb_column .tm_pb_post {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+  }
+  .tm_pb_post {
+    margin-bottom: 21px;
+    .tm_pb_image_container {
+      margin-bottom: 7px;
+    }
+    .more-link {
+      @extend .btn;
+      margin-top: 30px;
+      color: #fff;
+    }
+
+    .entry-title {
+      font-size: 30px;
+      margin-top: 14px;
+      line-height: 1.2;
+      @include media-breakpoint-up(md) {
+        min-height: 63px;
+      }
+    }
+    .tm_pb_post_meta {
+      margin-bottom: 20px;
+      margin-top: 38px;
+      @include media-breakpoint-down(md) {
+        margin-top: 25px;
+      }
+      font-size: 13px;
+      * + * {
+        margin-left: 12px;
+      }
+      > *:last-child {
+        margin-right: 12px;
+        position: relative;
+      }
+      .author {
+        margin-left: 0;
+        > a {
+          margin-left: 0;
+          text-transform: capitalize;
+        }
+      }
+
+      a + a {
+        margin-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+      > a {
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.entry-content #tm_builder_outer_content .tm_overlay:before {
+  @include font-awesome-icon;
+  font-size: 32px;
+  content: '\f06e';
+}

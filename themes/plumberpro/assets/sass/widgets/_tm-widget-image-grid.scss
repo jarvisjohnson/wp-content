@@ -1,0 +1,55 @@
+.widget.widget-image-grid.widget{
+	padding: 0;
+	box-shadow: none;
+	background: transparent;
+	
+}
+.widget-image-grid {
+	.row{
+		margin: 0 -15px;
+		line-height: 0;
+	}
+	&__holder {
+		padding : 0;
+		line-height: normal;
+		margin-bottom: 30px;
+	}
+	&__inner {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		& img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__content {
+		position: relative;
+		text-align: left;
+		@include transition( all 0.5s ease );
+    p {
+      line-height: 1.625;
+    }
+		.btn{
+			margin-top: 10px;
+		}
+	}
+	&__title{
+		margin-top: 28px;
+		font-style: normal;
+		a{
+			display: inline-block;
+			text-decoration: none;
+			@include transition( all 0.5s ease );
+		}
+	}
+}
+
+.position-two-sidebars .columns-number-3 {
+	.widget-image-grid {
+		&__content {
+			padding: 0 10px;
+		}
+	}
+}

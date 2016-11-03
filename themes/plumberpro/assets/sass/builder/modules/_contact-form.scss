@@ -1,0 +1,71 @@
+#tm_builder_outer_content .tm_pb_contact_form_container {
+
+  &.custom-form {
+    .tm_pb_contact_main_title {
+      font-size: 24px;
+      text-align: left;
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+    //TODO
+    .tm_pb_contact_right {
+      display: none;
+    }
+    .tm_pb_contact_form .tm_contact_bottom_container {
+      text-align: left;
+      margin-top: 0px;
+    }
+  }
+
+  .tm_pb_contact_main_title {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  .tm_pb_contact_field {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+  }
+
+  .tm-pb-contact-message {
+    color: red;
+    ul li {
+      color: red;
+      &::before{
+        display: none;
+      }
+    }
+    margin-bottom: 30px;
+  }
+
+  .tm_pb_contact_form {
+    .tm_pb_contact_form_input {
+      border: none;
+      padding: 14px 20px;
+      margin: 0 0 11px 0;
+      border-radius: 2px;
+    }
+    .tm_pb_contact_form_label {
+      margin-bottom: 4px;
+      display: block;
+    }
+    .tm_pb_contact_message {
+      min-height: 85px;
+    }
+    .tm_contact_bottom_container {
+      float: none;
+      text-align: center;
+      overflow: visible;
+      margin-top: 18px;
+      .tm_pb_contact_submit {
+        @extend .btn;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

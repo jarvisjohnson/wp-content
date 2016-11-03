@@ -1,0 +1,17 @@
+.site-logo {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+  line-height: 1;
+	&__link {
+		text-decoration: none;
+    line-height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+
+  }
+}
+
+.site-description{
+	display: inline-block;
+}

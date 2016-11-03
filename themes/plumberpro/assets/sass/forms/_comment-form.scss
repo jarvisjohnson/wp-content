@@ -1,0 +1,77 @@
+.comment {
+	&-respond {
+		margin: 20px -10px;
+		padding: 12px 10px 0;
+		position: relative;
+		&::before{
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 10px;
+			left: 10px;
+			height: 1px;
+			background-color: $color__background-hr;
+			@include media-breakpoint-up(lg) {
+				right: 30px;
+				left: 30px;
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin-right: -30px;
+			margin-left: -30px;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+	}
+	&-reply-title {
+		margin-top: 28px;
+		@include media-breakpoint-up(lg) {
+			font-size: 20px;
+			line-height: 1.4;
+			margin-bottom: 15px;
+		}
+	}
+	&-form {
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			margin: 30px 0 0 0;
+		}
+		.form-submit {
+			margin: 30px 0 0 0;
+			.submit{
+				@include transition(.3s ease all);
+				&:hover{
+					box-shadow:none;
+				}
+			}
+			.comment-list & {
+				padding-bottom: 30px;
+			}
+		}
+		&__field {
+			width: 100%;
+			border: none;
+      &:focus {
+        outline: none;
+      }
+			.comment-form-comment &{
+				width: 100%;
+			}
+			vertical-align: top;
+
+			@include media-breakpoint-up(sm) {
+				width: 50%;
+			}
+		}
+		.logged-in-as,
+		.comment-notes {
+			margin: 15px 0 25px;
+		}
+	}
+}
+#cancel-comment-reply-link {
+	@include font-size(0.75);
+}

@@ -1,0 +1,24 @@
+#tm_builder_outer_content {
+  .tm_pb_module.tm_pb_accordion {
+    .tm_pb_toggle_title {
+      margin: 0;
+      &:before {
+        font-size: 14px;
+      }
+    }
+
+    .tm_pb_toggle {
+      padding: 17px 25px 19px 39px;
+      margin-bottom: 2px;
+      border-color: #f8f8f8;
+    }
+
+    .tm_pb_toggle_content {
+      padding-top: 5px;
+      padding-left: 19px;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  position: relative;
+  margin-bottom: 17px;
+
+
+  &__title {
+    .page-title {
+      margin: 0;
+    }
+  }
+  &__items {
+    float: left;
+  }
+  &__browse {
+    float: left;
+    margin-right: 10px;
+  }
+  &__wrap {
+    float: left;
+    margin: 0;
+    @media (min-width: 992px) {
+      margin: 4px 0;
+    }
+  }
+  &__item {
+    float: left;
+    &-sep {
+      margin: 0 18px;
+      color: $color__background-hr;
+    }
+  }
+}

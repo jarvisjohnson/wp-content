@@ -1,0 +1,359 @@
+/*heading*/
+#tm_builder_outer_content .tm_pb_module h1{
+	color: $regular_h1_color;
+}
+
+#tm_builder_outer_content .tm_pb_module h2{
+	color: $regular_h2_color;
+}
+
+#tm_builder_outer_content .tm_pb_module h3{
+	color: $regular_h3_color;
+}
+
+#tm_builder_outer_content .tm_pb_module h4{
+	color: $regular_h4_color;
+}
+
+#tm_builder_outer_content h5 {
+	color: $regular_h5_color;
+}
+
+#tm_builder_outer_content  .tm_pb_module.invert h1{
+	color: $invert_h1_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.invert  h2{
+	color: $invert_h2_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.invert h3{
+	color: $invert_h3_color;
+}
+
+#tm_builder_outer_content  .tm_pb_module.invert h4{
+	color: $invert_h4_color;
+}
+
+#tm_builder_outer_content .invert h5,
+#tm_builder_outer_content .tm_pb_module.invert h5{
+	color: $invert_h5_color;
+}
+/*slider*/
+
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module h1,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_0 h3{
+	color: $regular_text_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a.fa:hover{
+	color: $regular_text_color;
+}
+
+
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
+	background: $invert_link_color;
+}
+
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:hover,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:hover {
+	background: $regular_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:before,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:before {
+    color: $regular_accent_color_1;
+}
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:hover:before,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:hover:before {
+    color: $invert_link_color;
+}
+
+
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a {
+    background: @darken($regular_accent_color_1, 05);
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a:hover,
+#tm_builder_outer_content .tm-pb-controllers .tm-pb-active-control {
+    background: @alpha($invert_accent_color_1, 50) !important;
+}
+
+#tm_builder_outer_content .tm_pb_button {
+    font-family: $h1_font_family;
+    color: $regular_accent_color_1;
+    border-color: $regular_accent_color_1;
+}
+.main-navigation ul.menu > li.btn > a {
+    font-family: $body_font_family;
+    border-color: @alpha($regular_accent_color_1, 70);
+}
+#tm_builder_outer_content .invert .tm_pb_button {
+    color: $invert_accent_color_1;
+    border-color: @alpha($invert_accent_color_1, 50);
+}
+
+#tm_builder_outer_content .tm_pb_button:hover,
+.main-navigation ul.menu > li.btn > a:hover {
+    color: $invert_accent_color_1;
+    border-color: $regular_accent_color_1;
+    background-color: $regular_accent_color_1;
+}
+#tm_builder_outer_content .invert .tm_pb_button:hover {
+    color: $regular_accent_color_1;
+    border-color: $invert_accent_color_1;
+    background-color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_module h1{
+	color:  $regular_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a {
+	font-family:$body_font_family;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a:hover {
+	color: $regular_link_hover_color;
+}
+
+/*blog*/
+#tm_builder_outer_content .tm_pb_post_meta{
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_post_meta .author > a{
+	color:$regular_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_post_meta .author > a:hover{
+	color:$regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_post_meta > a{
+	color:  $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_post_meta > a:hover{
+	color:$regular_link_hover_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module .entry-title a {
+    color: $regular_h3_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module .entry-title a:hover {
+    color:  $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm-pb-arrow-prev,
+#tm_builder_outer_content .tm-pb-arrow-next {
+	color:  $regular_accent_color_1 !important;
+}
+
+#tm_builder_outer_content .tm-pb-arrow-prev:hover,
+#tm_builder_outer_content .tm-pb-arrow-next:hover {
+	color:$regular_link_hover_color !important;
+}
+
+#tm_builder_outer_content .tm_link_content a.tm_link_main_url:hover,
+#tm_builder_outer_content .tm_link_content h2 a:hover{
+	color: $regular_text_color !important;
+}
+
+#tm_builder_outer_content .tm_quote_content,
+#tm_builder_outer_content .tm_link_content,
+#tm_builder_outer_content .tm_audio_content{
+    background-color:  $regular_accent_color_1;
+}
+#tm_builder_outer_content .tm_quote_content p q {
+    color:$invert_text_color;
+}
+
+/*contacts*/
+
+p > a[href^="callto"] {
+	color:$regular_text_color;
+	margin-left: 8px;
+}
+
+p > a[href^="callto"]:first-child {
+	margin-left: 0;
+}
+
+p > a[href^="callto"]:hover {
+	color: $regular_accent_color_1;
+}
+p > a[href^="mailto"] {
+	color: $regular_accent_color_1;
+}
+p > a[href^="mailto"]:hover {
+	color: $regular_link_hover_color;
+}
+
+/*faqs*/
+
+#tm_builder_outer_content .faqs .tm_pb_text ul li {
+	color: $regular_text_color;
+}
+
+/*booked*/
+
+body table.booked-calendar thead th .monthName{
+	color: $regular_text_color;
+	font-family:$body_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before,
+.widget.widget_booked_calendar  .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before{
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a:hover::before,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a:hover::before {
+	color: $regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th{
+	background: $regular_text_color !important;
+	font-family:$body_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td,
+body #tm_builder_outer_content table.booked-calendar td .date,
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur span,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td,
+body .widget.widget_booked_calendar table.booked-calendar td .date,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur span{
+	/*background: $regular_accent_color_2;*/
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number {
+    color: $invert_link_color !important;
+}
+
+body #tm_builder_outer_content table.booked-calendar td .date:hover,
+body .widget.widget_booked_calendar table.booked-calendar td .date:hover{
+	background: $regular_accent_color_1 !important;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td span .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td span .number {
+	color:  $regular_accent_color_1;
+	font-family:$body_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur span .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur span .number {
+	color: $regular_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date{
+	background:$regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td {
+	border-color: $regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+body .booked-modal input.button-primary[type="submit"],
+.widget.widget_booked_calendar .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+body .booked-modal input.button-primary[type="submit"]{
+	background: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
+body .booked-modal input.button-primary[type="submit"]:hover,
+.widget.widget_booked_calendar  .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
+body .booked-modal input.button-primary[type="submit"]:hover{
+	background: $regular_link_hover_color !important;
+}
+
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button {
+	background: $regular_accent_color_1;
+}
+
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover {
+	background: $regular_link_hover_color !important;
+}
+
+body .booked-modal .bm-window .close i{
+	color: $regular_accent_color_1;
+}
+
+body .booked-calendarSwitcher{
+	background: $regular_accent_color_1 !important;
+}
+
+body .booked-calendarSwitcher select{
+	background: $regular_link_hover_color !important;
+}
+
+body .booked-form .required-asterisk {
+	color: $regular_accent_color_1;
+}
+
+body table.booked-calendar td.prev-date .number {
+	color: $regular_text_color !important;
+}
+
+body #tm_builder_outer_content table.booked-calendar td.prev-date .date:hover,
+body .widget.widget_booked_calendar table.booked-calendar td.prev-date .date:hover  {
+	background:  $regular_accent_color_2 !important;
+}
+
+body #tm_builder_outer_content table.booked-calendar td.today .date .number,
+body .widget.widget_booked_calendar table.booked-calendar td.today .date .number{
+	color: #fff !important;
+}
+
+
+body #tm_builder_outer_content table.booked-calendar td.today .date,
+body .widget.widget_booked_calendar table.booked-calendar td.today .date{
+    background: $regular_link_hover_color;
+}
+
+body #tm_builder_outer_content table.booked-calendar td.today:hover .date:hover,
+body .widget.widget_booked_calendar table.booked-calendar td.today:hover .date:hover{
+	background: $regular_link_hover_color !important;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link{
+	background:$regular_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:hover{
+    background: transparent;
+    color: $regular_accent_color_1;
+
+}
+
+#tm_builder_outer_content .widget a.btn {
+    color: $invert_link_color;
+}
+#tm_builder_outer_content .widget a.btn:hover {
+    color: $regular_accent_color_1;
+}
+
+/* Builder colors */
+#tm_builder_outer_content .swiper-wrapper .post__cats a {
+    color: $invert_link_color;
+}
+#tm_builder_outer_content .tm_pb_widget_area .widget_nav_menu ul li.btn {
+    background-color: $regular_accent_color_1;
+    color: $invert_link_color;
+}
+#tm_builder_outer_content .tm_pb_widget_area .widget_nav_menu ul li.btn:hover {
+    background-color: $invert_link_color;
+    color: $regular_accent_color_1;
+}

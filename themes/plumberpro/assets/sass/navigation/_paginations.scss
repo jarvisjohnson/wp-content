@@ -1,0 +1,109 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 2.3em;
+    overflow: hidden;
+  }
+
+  .nav-previous,.nav-next  {
+
+  }
+
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+    position: relative;
+    > a {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 25px;
+      @include media-breakpoint-up(sm) {
+        padding-left: 0;
+      }
+
+      &:before {
+        @include material-icon();
+        font-size: 20px;
+        content: '\E408';
+        vertical-align: top;
+        line-height: 1.2;
+
+
+        position: absolute;
+        left: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include media-breakpoint-up(sm){
+          left: auto;
+          position: static;
+          top: auto;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+    position: relative;
+    > a {
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 25px;
+      @include media-breakpoint-up(sm) {
+        padding-right: 0;
+      }
+      &:after {
+        @include material-icon();
+        font-size: 20px;
+        content: '\E409';
+        vertical-align: top;
+        line-height: 1.2;
+
+
+        position: absolute;
+        right: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include media-breakpoint-up(sm){
+          right: auto;
+          position: static;
+          top: auto;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  padding: 0 0 10px;
+  .site-content_wrap & {
+    margin-bottom: 30px;
+  }
+  .page-numbers {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+    text-align: center;
+
+    &.dots {
+      border: none;
+    }
+    &.next,
+    &.prev {
+      border: none;
+      font-style: normal;
+      i {
+        vertical-align: middle;
+        line-height: 0.9;
+      }
+    }
+  }
+}

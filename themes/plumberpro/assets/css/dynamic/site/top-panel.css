@@ -1,0 +1,61 @@
+.top-panel .site-info h4, .top-panel .site-info h5, .top-panel .site-info h6 {
+    font-style: $body_font_style;
+    font-weight: $body_font_weight;
+    font-family: $body_font_family;
+    color:$regular_accent_color_2;
+}
+.top-panel .site-info {
+
+}
+
+.site-header .site-info .phone__info a, .site-header .site-info .time__info em{
+	color: $regular_link_color;
+}
+
+.header-container .site-info .phone__info::before,
+.header-container .site-info .time__info::before {
+    background-color: $regular_accent_color_1;
+    color: $invert_accent_color_1;
+}
+.site-header .site-info .phone__info a:hover{
+	color:$regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search-form__submit {
+	color: $regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search__toggle:hover {
+	color: $regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search-form__submit:hover {
+	color: $regular_text_color;
+}
+
+header.site-header .header-container .main-navigation .menu-toggle::before {
+	color: $regular_accent_color_1;
+}
+
+header.site-header .header-container .main-navigation .menu-toggle:hover::before {
+	color: $regular_text_color;
+}
+
+.header-container .site-branding .site-description {
+    font-family: $h2_font_family;
+    color: $regular_accent_color_2;
+}
+
+.site-logo__link {
+	color: $regular_link_hover_color !important;
+}
+
+.top-panel .top-panel__wrap .header__search .search__toggle:hover {
+    color: $regular_h2_color;
+}
+.top-panel__menu-list li.btn {
+    font-family: $body_font_family;
+}
+.top-panel__menu-list li::before {
+    color: $regular_accent_color_2;
+}

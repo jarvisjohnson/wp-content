@@ -1,0 +1,79 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @include button;
+
+  &:hover {
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  @include button;
+  &__text,
+  &__icon {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__icon {
+    @include material-icon();
+    font-size: 1.5em;
+    line-height: inherit;
+    &:before {
+      content: '\E5C8';
+    }
+  }
+  &.btn-fullwidth {
+    width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    box-shadow: none;
+  }
+}
+
+a {
+  @include transition(.3s ease all);
+}
+
+.tm_pb_builder .entry-content #tm_builder_outer_content .tm_pb_button,
+.tm_pb_builder .entry-content #tm_builder_outer_content .tm_pb_button:hover {
+  padding: $button__indents !important;
+}
+
+.main-navigation ul.menu > li.btn > a {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  &::after {
+    display: block !important;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 103%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  &:hover {
+    &::after {
+      width: 103%;
+      opacity: 1;
+    }
+  }
+}

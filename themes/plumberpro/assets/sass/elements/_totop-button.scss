@@ -1,0 +1,46 @@
+#toTop {
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  left: -100px;
+  overflow: hidden;
+  width: 52px;
+  height: 52px;
+  border: none;
+  text-indent: 0%;
+  background-color: #fff;
+  z-index: 999;
+  @include box-shadow();
+  text-align: center;
+  &:before {
+    @include font-awesome-icon;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    content: '\f106';
+  }
+
+  span{
+    display: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    left: auto;
+    right: 20px;
+  }
+  @include media-breakpoint-up(md) {
+    bottom: 80px;
+  }
+
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+
+#toTop:active, #toTop:focus {
+  outline: none;
+}

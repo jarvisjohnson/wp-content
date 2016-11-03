@@ -1,0 +1,124 @@
+.comments {
+  &-area {
+    position: relative;
+    margin: 0 -10px;
+    padding: 12px 10px 0;
+    @include media-breakpoint-up(lg) {
+      margin-right: -30px;
+      margin-left: -30px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  &-title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 25px;
+      margin-top: 28px;
+    }
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 10px;
+      left: 10px;
+      height: 1px;
+      background-color: $color__background-hr;
+      @include media-breakpoint-up(lg) {
+        right: 30px;
+        left: 30px;
+      }
+    }
+  }
+}
+
+.comment {
+  &-list {
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0;
+    .children {
+      list-style: none;
+      padding-left: 30px;
+      margin-left: 0;
+      margin-top: 10px;
+      @include media-breakpoint-up(lg) {
+        padding-left: 60px;
+      }
+    }
+    > .comment {
+      margin-bottom: 10px;
+    }
+  }
+  &-body {
+    padding: 25px 10px 25px 10px;
+    @include media-breakpoint-up(lg) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    &__holder {
+      position: relative;
+      padding-right: 18px;
+    }
+    .avatar {
+      float: left;
+      margin: 0 15px 10px 0;
+      border-radius: 50%;
+      width: 40px;
+      @include media-breakpoint-up(lg) {
+        width: auto;
+        margin: 0 24px 15px 0;
+      }
+    }
+    .posted-by {
+    }
+    .fn {
+      text-transform: capitalize;
+      font-weight: normal;
+
+      & + .comment-date::before {
+        content: '';
+        width: 1px;
+        height: 22px;
+        position: absolute;
+        left: -15px;
+        top: 0;
+      }
+    }
+
+    .reply {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9;
+      transition: all 0.25s ease;
+    }
+  }
+  &-reply-link {
+    font-size: 20px;
+  }
+  &-date {
+    display: block;
+    margin-left: 0;
+    position: relative;
+    &:before {
+      display: none;
+    }
+    @include media-breakpoint-up(sm) {
+      margin-left: 30px;
+      display: inline-block;
+
+      &:before {
+        display: block;
+      }
+    }
+    &__time {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
